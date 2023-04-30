@@ -8,29 +8,23 @@ https://www.cnblogs.com/supersayajin/p/8489435.html
 '''
 import cv2
 import numpy as np
-import glob
-import os
 import dlib
-import json
 import time
 import csv
 
 # 人脸目标检测+获取关键点
-
-
 def write_csv(path, data_row):
     with open(path, 'a+') as f:
         csv_write = csv.writer(f)
         csv_write.writerow(data_row)
 
 # 人脸注册
-  # 获取视频流
-    # haar检测人脸
-    # 68个关键点获取
-    # 提取特征
-    # 特征保存到csv
-    # haar人脸目标检测
-
+# 获取视频流
+# haar检测人脸
+# 68个关键点获取
+# 提取特征
+# 特征保存到csv
+# haar人脸目标检测
 
 def register_face(label_id=2, label='qq', count=2, interval=2):
     '''
@@ -108,9 +102,8 @@ def register_face(label_id=2, label='qq', count=2, interval=2):
 def formatarr(str_array="[[1,2,3],[4,5,6],[7,8,9]]"):
   # 首先去掉字符串两端的方括号
     str_rows = str_array.strip('[').strip(']')
-    str_rows = str_rows.replace('\n', '')
     # 按逗号分割字符串中的每一个元素，返回一个列表
-    # str_rows = str_array.split('],[')
+    str_rows = str_rows.replace('\n', '')
 
     # 定义一个空的二维数组
     matrix = str_rows.split(' ')
@@ -118,8 +111,6 @@ def formatarr(str_array="[[1,2,3],[4,5,6],[7,8,9]]"):
     for i in matrix:
         if i:
             newArr.append(float(i))
-
-    print(newArr)
 
     return newArr
 
@@ -217,7 +208,7 @@ def detect_face():
 
 
 if __name__ == "__main__":
-  # 人脸信息注册
+    # 人脸信息注册
     # register_face()
+    # 人脸识别
     detect_face()
-    # formatarr()

@@ -1,0 +1,1 @@
+form paddleocr import PaddleOCR,draw_ocr

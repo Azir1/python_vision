@@ -10,7 +10,7 @@
   - 进入环境 conda activate 环境名称
   - 退出环境 conda deactivatve --name 环境名称 --all
   - 创建指定Pythe
-  - 删除环境 conda remove版本环境 conda create --name 环境名称 python=3.7
+  - 删除环境 conda remove版本环境 conda env remove --name py3.7
 
 5. conda镜像源
 conda config --add channels https://mirrors.aliyun.com/anaconda/pkgs/main/

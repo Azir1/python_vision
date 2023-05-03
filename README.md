@@ -2,9 +2,9 @@
 
 ## 已完成：
 1-10 已完成
+17-19 YOLOv5 jetson nano 工地防护检测
 
 ## TODO：
-1. 17-19 YOLOv5 jetson nano 工地防护检测
 2. 19.OCR车牌识别
 3. YOLOv5 + Deepsort 车辆追踪及速度分析
 4. 25.swin-transformer路面分割
